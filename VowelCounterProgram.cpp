@@ -41,6 +41,9 @@ int main(int argc, char* argv[])
     int vowelO = 0;
     int vowelU = 0;
     int totalVowels = 0;
+    int letterC = 0;
+    int letterB = 0;
+    int letterD = 0;
 
 
     //Opens the file within the command line argument "Constitution_of_the_United_States.html"
@@ -89,6 +92,15 @@ int main(int argc, char* argv[])
         else if (ch == 'u' || ch == 'U') {
             vowelU++; // if the character is the vowel 'e' it will increment by one 
         }
+        else if (ch == 'c' || ch == 'C') {
+            letterC++; // if the character is the vowel 'e' it will increment by one 
+        }
+        else if (ch == 'b' || ch == 'B') {
+            letterB++; // if the character is the vowel 'e' it will increment by one 
+        }
+        else if (ch == 'd' || ch == 'D') {
+            letterD++; // if the character is the vowel 'e' it will increment by one 
+        }
         else {
            
         };
@@ -106,6 +118,10 @@ int main(int argc, char* argv[])
     cout << "The number of O's: " << setfill('.') << setw(45) << vowelO << endl;
     cout << "The number of U's: " << setfill('.') << setw(45) << vowelU << endl;
     cout << "The vowel count is: " << setfill('.') << setw(44) << totalVowels << endl;
+    // GitHub Submission Assignment - Added 3 more letters
+    cout << "The number of C's: " << setfill('.') << setw(45) << letterC << endl;
+    cout << "The number of B's: " << setfill('.') << setw(45) << letterB << endl;
+    cout << "The number of D's: " << setfill('.') << setw(45) << letterD << endl;
 
     dataInput.close(); // Closes the file 
     system("pause");
